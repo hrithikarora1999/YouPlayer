@@ -34,9 +34,7 @@ var _showSpinner=false;
       child: Scaffold(
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
-          child: ModalProgressHUD(
-            inAsyncCall: _showSpinner,
-            child: Column(
+          child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
@@ -63,14 +61,10 @@ var _showSpinner=false;
                         TextFieldForm(text: 'Password',textcontrol: _passwordController,wadak: true,),
                         UsefulButton(text: 'Sign Up',function: () async{
                           try{
-                            setState(() {
-                              _showSpinner=true;
-                            });
+
                             final newuser=await _auth.createUserWithEmailAndPassword(email: _EmailController.text, password:_passwordController.text);
                             if(newuser!=null)
-                              {setState(() {
-                                _showSpinner=false;
-                              });
+                            {
                                 Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
                               }
                           }
@@ -88,7 +82,6 @@ var _showSpinner=false;
                 ),
               ],
             ),
-          ),
         ),
       ),
     );
