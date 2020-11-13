@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "934710873967",
+    "firebase_url": "https://yellowclass-db0d6.firebaseio.com",
+    "project_id": "yellowclass-db0d6",
+    "storage_bucket": "yellowclass-db0d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934710873967:android:57b346a1529f899a8e629a",
+        "android_client_info": {
+          "package_name": "com.hrithik.yellowclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934710873967-vr85tvtld83tuutchau5nm65p6aie559.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKkkKNiA3b07tEtgmrDDcrh_l7fvo3jSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934710873967-vr85tvtld83tuutchau5nm65p6aie559.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
