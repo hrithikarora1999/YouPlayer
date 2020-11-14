@@ -7,8 +7,8 @@ import 'package:yellowclass/helper/Volume.dart';
 
 import 'VideoPlayButton.dart';
 
-class LandscapePlayerControls extends StatelessWidget {
-  const LandscapePlayerControls(
+class VideoPlayerControls extends StatelessWidget {
+  const VideoPlayerControls(
       {Key key, this.iconSize = 20, this.fontSize = 12})
       : super(key: key);
   final double iconSize;
@@ -29,7 +29,7 @@ class LandscapePlayerControls extends StatelessWidget {
                     children: [
                       Center(child: Padding(
                         padding: const EdgeInsets.only(left: 380),
-                        child: LandscapePlayToggle(),
+                        child: PlayButton(),
                       )),
                       Padding(
                         padding: const EdgeInsets.only(left: 0,top: 0),

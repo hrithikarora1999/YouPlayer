@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:video_player/video_player.dart';
 import 'package:yellowclass/helper/CameraPreview.dart';
 import 'package:yellowclass/helper/Volume.dart';
-import 'package:yellowclass/helper/mockData.dart';
+import 'package:yellowclass/helper/Videos.dart';
 
 import 'VideoPlayerControls.dart';
 
@@ -29,7 +29,7 @@ class _LandscapePlayerState extends State<LandscapePlayer> {
     super.initState();
     flickManager = FlickManager(
         videoPlayerController:
-        VideoPlayerController.network(mockData["items"][randomNumber]["trailer_url"]));
+        VideoPlayerController.network(Videos["Videos"][randomNumber]["link"]));
   }
 
   @override
@@ -52,7 +52,7 @@ class _LandscapePlayerState extends State<LandscapePlayer> {
               ],
               systemUIOverlay: [],
               flickVideoWithControls: FlickVideoWithControls(
-                controls: LandscapePlayerControls(),
+                controls: VideoPlayerControls(),
               ),
             ),
             Padding(

@@ -1,7 +1,6 @@
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:yellowclass/Screens/HomeScreen.dart';
 import 'package:yellowclass/helper/helper.dart';
 import 'package:firebase_auth/firebase_auth.dart';

@@ -2,8 +2,8 @@ import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class LandscapePlayToggle extends StatelessWidget {
-  const LandscapePlayToggle({Key key}) : super(key: key);
+class PlayButton extends StatelessWidget {
+  const PlayButton({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
