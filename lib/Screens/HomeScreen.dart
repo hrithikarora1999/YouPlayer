@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:yellowclass/Screens/Signup.dart';
 import 'package:yellowclass/Screens/VideoPlayer.dart';
 import 'package:yellowclass/helper/helper.dart';
+import 'package:yellowclass/helper/rough.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -90,13 +91,14 @@ class _HomeScreenState extends State<HomeScreen> {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: SubmitButton(text: 'YouPlayer',function: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LandscapePlayer()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>VideoPlayer()));
                 },),
               ),
               SubmitButton(text: 'Sign Out',function: ()async{
                  await _auth.signOut();
                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Signup()));
               },),
+
             ],
           ),
         ),
